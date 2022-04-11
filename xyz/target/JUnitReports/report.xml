@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="0.284">
+    <testcase classname="Compose and send the mail through gmail account" name="User logs in and send mails" time="0.099">
+        <failure message="The path to the driver executable The path to the driver executable must be set by the webdriver.chrome.driver system property; for more information, see https://github.com/SeleniumHQ/selenium/wiki/ChromeDriver. The latest version can be downloaded from https://chromedriver.storage.googleapis.com/index.html" type="java.lang.IllegalStateException"><![CDATA[Given there is a user who visits the login page.............................failed
+And user login with username"Incubyte.demo"with password"incubyte123".......skipped
+When user sends an email to "abc123@Incubyte.com" with subject "Incubyte" with body"Automation QA test for Incubyte".skipped
+Then the email appears in sent folder of gmail with subject"Incubyte" with body"Automation QA test for Incubyte".skipped
+
+StackTrace:
+java.lang.IllegalStateException: The path to the driver executable The path to the driver executable must be set by the webdriver.chrome.driver system property; for more information, see https://github.com/SeleniumHQ/selenium/wiki/ChromeDriver. The latest version can be downloaded from https://chromedriver.storage.googleapis.com/index.html
+	at org.openqa.selenium.internal.Require$StateChecker.nonNull(Require.java:280)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:132)
+	at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:38)
+	at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:231)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:434)
+	at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:127)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:46)
+	at stepdefinition.composeemail.there_is_a_user_who_visits_the_login_page(composeemail.java:13)
+	at ✽.there is a user who visits the login page(file:///C:/Users/heet1/eclipse-workspace/xyz/src/test/resources/Features/Composeemail.feature:6)
+]]></failure>
+    </testcase>
+</testsuite>
